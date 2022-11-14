@@ -1,18 +1,14 @@
 from flask import Flask
 from flask import request
 from flask import jsonify
-rows_base = [
-{'id': 1, 'info':'Тест 1'},
-{'id': 2, 'info':'Тест 2'},
-{'id': 3, 'info':'Тест 3'},
-{'id': 4, 'info':'Тест 4'},
-{'id': 5, 'info':'Тест 5'} ]
-rows_id_seq = 6
+import json
 
+with open('test.json') as json_file:
+    json_data = json.load(json_file)
 
 app = Flask(__name__)
 
+
 @app.route('/api/rows', methods=['GET'])
 def rows_index():
-    return jsonify(rows_base)
-
+    return jsonify(json_data)
