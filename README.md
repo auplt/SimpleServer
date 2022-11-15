@@ -19,10 +19,6 @@ pip install Flask
 ```
 venv\Scripts\activate
 ```
-Задание переменной окружения (Windows)
-```
-set FLASK_APP=main.py
-```
 
 ### Запуск сервера
 ```

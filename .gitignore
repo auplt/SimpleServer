@@ -132,3 +132,4 @@ dmypy.json
 .idea/Simple server.iml
 .idea/inspectionProfiles/profiles_settings.xml
 .idea/.gitignore
+.idea/vcs.xml
